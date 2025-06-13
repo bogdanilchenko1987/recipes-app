@@ -21,9 +21,11 @@ npm install
 ```
 
 4. Create .env.local file
-   In the root of the project, create a file .env.local and add your Spoonacular API key:
+
+In the root of the project, create a file .env.local and add your Spoonacular API key:
 
 SPOONACULAR_API_KEY=your_api_key_here
+
 NEXT_PUBLIC_SPOONACULAR_API_KEY=your_api_key_here
 
 5. Run the development server
