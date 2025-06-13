@@ -36,7 +36,7 @@ async function fetchRecipes(
 }
 
 export default async function RecipesPage({ searchParams }: RecipesPageProps) {
-  const { query = "", cuisine = "", maxReadyTime = "" } = await searchParams;
+  const { query = "", cuisine = "", maxReadyTime = "" } = searchParams;
   const recipesData = await fetchRecipes(query, cuisine, maxReadyTime);
 
   return (

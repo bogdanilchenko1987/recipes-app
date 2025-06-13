@@ -20,7 +20,7 @@ async function fetchRecipe(id: string) {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { id } = await params;
+  const { id } = params;
   const recipe = await fetchRecipe(id);
 
   return {
@@ -36,7 +36,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function RecipeDetailsPage({ params }: Props) {
-  const { id } = await params;
+  const { id } = params;
   const recipe = await fetchRecipe(id);
 
   return (
